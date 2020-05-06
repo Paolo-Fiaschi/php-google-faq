@@ -63,7 +63,7 @@
                     <li><a href="">Account Google</a></li>
                 </ul>
             </div>
-        </div>
+         </div>
     </header>
     <main class = "container">
         <?php 
@@ -97,7 +97,5 @@
 
         </div>
     </footer>
-   
-    
 </body>
 </html>
