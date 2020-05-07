@@ -7,6 +7,11 @@
     <title>faq</title>
     <?php
         require_once "faq.php";
+        function printNumberFaq($faq){
+            count($faq);
+            return  count($faq);
+        };
+
     ?>
 </head>
 <body>
@@ -32,13 +37,18 @@
     </header>
     <main class = "container">
         <?php 
+
+            // $numeroFaq = 0;
             foreach ($faq as $questionAnswer) {
-
                 
-                    echo "<div><h2 class='question'>" . $questionAnswer['question'] . "</h2 class='question'>" . "<p>" . $questionAnswer['answer']. "</p></div>";
-                
+                $question = $questionAnswer['question'];
+                $answer = $questionAnswer['answer'];
 
+                echo "<div><h2 class='question'>" . $question . "</h2 class='question'>" . "<p>" . $answer. "</p></div>";
+                // $numeroFaq ++;
             }
+      
+            echo "<h2 class='question'>Numero faq totali: " . printNumberFaq($faq) . "</h2>";
         
         ?>
     </main>
